@@ -9,7 +9,8 @@ class SearchFunctions(BaseFunctions):
     def search(self):
         self.input(search_page_locators.search_textbox, parameters.search_text)
         self.click(search_page_locators.search)
-        assert self.wait_for_element(search_page_locators.search_textbox).get_attribute("value") == parameters.search_text
+        assert (self.wait_for_element(search_page_locators.search_textbox).get_attribute("value") ==
+                parameters.search_text), "Text's are not matched!"
         self.click(search_page_locators.second_page)
 
     def click_product(self):

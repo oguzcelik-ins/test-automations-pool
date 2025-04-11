@@ -29,3 +29,4 @@ class product_page_locators:
     in_wishlist_product_text = (By.CSS_SELECTOR, ".a-size-small .a-size-base .a-link-normal ")
     wishlist = (By.ID, "huc-view-your-list-button")
     delete = (By.CSS_SELECTOR, "[name='submit.deleteItem']")
+    deleted_text = (By.XPATH, "//div[@class = 'a-alert-content' and text()='Deleted']")

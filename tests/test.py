@@ -2,7 +2,6 @@ from base.locators import parameters
 from pages.loginPage import LoginFunctions
 from pages.search import SearchFunctions
 from pages.productPage import ProductFunctions
-from base import baseFunctions
 from selenium import webdriver
 import unittest
 
